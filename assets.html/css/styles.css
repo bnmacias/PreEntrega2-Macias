@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;900&family=Karla:wght@200;300;400&family=Luckiest+Guy&display=swap');
+
+body{
+    margin:0;
+    font-family: 'luckiest guy', alegreya sans, karla;
+    color: white;
+}
+
+/*mobile first*/
+
+.grid-container{
+    /*definiciones box*/
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    /*definiciones grid*/
+    display:grid;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 100%;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 20vh;
+}
+
+main{
+    grid-area: main;
+    background-color: rgba(99, 99, 91, 0.808);
+    color:black;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 70% 10%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 244, 93);
+    color:black;
+    font-size: 8px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecera div{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.cabecera .titulo{
+    display: inline-block;
+}
+
+.logo{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.titulo{
+    padding:10px;
+}
+
+.marca{
+    justify-content: center;
+    font-size: 32px;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.navbar li {
+    display:inline;
+    padding: 10px;
+    list-style: none;
+    transition: .4s;
+    margin-right:10px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.navbar .material-symbols-outlined{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: auto 5px;
+}
+
+.textoInicial{
+    text-align: center;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    text-align: center;
+    row-gap: 50px;
+}
+
+.btn-emparchar{
+    border-radius: 100%;
+    background-color: white;  
+}
+
+.btn-emparchar .rueda{
+    width: 150px;
+    height: 150px;
+}
+
+.btn-remolque{
+    border-radius: 100%;
+    background-color: white;   
+}
+.btn-remolque .remolque{
+    width:150px;
+    height:150px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    transition: .4s;
+}
+
+.volver{
+    text-align: center;
+}
+
+.direccion{
+    text-align: right;
+}
+
+/*media queries*/
+
+@media (min-width: 600px) and (max-width:1999px){
+    .btn-container{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1999px){
+    div.btncontainer{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 870px) and (max-width:1999px){
+    .navbar .material-symbols-outlined{
+        display: none;
+    }
+}
+
+@media (min-width: 870px) and (max-width:1999px){
+    .navbar-menu{
+        display: inline;
+    }
+}

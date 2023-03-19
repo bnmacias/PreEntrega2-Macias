@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;900&family=Karla:wght@200;300;400&family=Luckiest+Guy&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'luckiest guy', alegreya sans, karla;
+}
+
+.logo{
+    height: 60px;
+}
+
+.carousel-slide{
+    text-align: center;
+}
+.carousel-item{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.registro{
+    font-size: 32px;
+}
+
+footer div h3 a{
+    text-decoration: none;
+    color:#212519;
+}
+
